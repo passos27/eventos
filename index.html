@@ -13,13 +13,25 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
             
 </head>
 <body class="grey lighten-2">
 
 
 <!-- aqui fica a div novo -->
-	<div class="novo"></div>
+	<div class="novo" id="novo">
+		<!-- aqui inicia o container -->
+		<div class="container">
+			<h1 class="grey-text">Cadastrar evento</h1>
+			<input type="text" name="nome" placeholder="Digite o nome do evento">
+			<textarea placeholder="Digite a descrição do evento"></textarea>
+			<input type="text" name="latitude" placeholder="Digite a latitude">
+			<input type="text" name="longitude" placeholder="Digite a longitude">
+		</div>
+		<!-- aqui finaliza o container -->
+
+	</div>
 <!-- aqui fica a div novo -->
 
 
@@ -90,7 +102,7 @@
 </div>
 
 
-<div class="fixed-action-btn">
+<div class="fixed-action-btn" onclick="novo()">
   <a class="btn-floating btn-large red green accent-4">
     <i class="large material-icons">add</i>
   </a>
@@ -106,6 +118,6 @@
 
 
 
-
+<script type="text/javascript" src="js/funcoes.js"></script>
 </body>
 </html>
